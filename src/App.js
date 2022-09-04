@@ -38,7 +38,7 @@ function App() {
   }, [message])
 
   useEffect(() => {
-    bottomMsg.current?.scrollIntoView({ behavior: 'smooth' })
+    bottomMsgRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages]);
 
   const handleChange = event => {
